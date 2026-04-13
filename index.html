@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JGardenTool - Japanese Garden Tools and Bonsai Supplies</title>
+<meta name="description" content="A curated database of Japanese garden tools and bonsai supplies for international gardeners. Compare steel types, specs, and find forged-in-Japan quality.">
+<meta property="og:title" content="JGardenTool - Japanese Garden Tools and Bonsai Supplies">
+<meta property="og:description" content="A curated database of Japanese garden tools and bonsai supplies for international gardeners.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/j-garden-tool/">
+<link rel="canonical" href="https://humancronadmin.github.io/j-garden-tool/">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">JGarden<span>Tool</span></a>
+  <div class="nav-links">
+    <a href="database.html">Database</a>
+    <a href="#guides">Guides</a>
+    <a href="#about">About</a>
+  </div>
+</nav>
+<section class="hero">
+  <h1>Forged for the <em>Garden</em>.</h1>
+  <p>Japanese garden tools crafted for generations. A curated database of pruning shears, bonsai tools, and hand-forged implements for gardeners who demand the best.</p>
+  <a href="database.html" class="btn btn-primary">Browse the Database</a>
+</section>
+<section class="section">
+  <h2 class="section-title">The Problem</h2>
+  <div class="problem-grid" id="problems"></div>
+</section>
+<section class="section" style="background:var(--dark);color:#FFF;max-width:none;padding:48px 16px">
+  <div class="stats-row" id="stats"></div>
+</section>
+<section class="section" style="text-align:center">
+  <h2 class="section-title">Ready to Find Your Tool?</h2>
+  <p style="color:var(--muted);margin-bottom:24px;max-width:480px;margin-left:auto;margin-right:auto">Filter by category, brand, steel type, and price. Every listing includes real specs and expert notes from the workshop floor.</p>
+  <a href="database.html" class="btn btn-primary">Explore the Database</a>
+</section>
+<footer class="footer" id="about">
+  <p>JGardenTool is an open-source project. Forged for the garden. Find your edge.</p>
+  <p style="margin-top:8px"><a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script>
+const problems=[
+  {icon:"\u2702\uFE0F",title:"Best tools aren't in Western stores",desc:"The finest Japanese garden tools are made by small workshops. Most never reach international retailers."},
+  {icon:"\u2699\uFE0F",title:"Hard to know which steel grade matters",desc:"SK-5, white steel, blue steel, high-carbon. Each has different edge retention, rust resistance, and resharpening ease."},
+  {icon:"\u{1F331}",title:"Quality ranges from disposable to heirloom",desc:"A $15 bonsai cutter and a $120 one look similar in photos. Specs and maker heritage tell the real story."}
+];
+const stats=[
+  {num:"30+",label:"Tools"},
+  {num:"8",label:"Categories"},
+  {num:"Forged in Japan",label:"Heritage"}
+];
+document.getElementById("problems").innerHTML=problems.map(p=>`<div class="problem-card"><div class="icon">${p.icon}</div><h3>${p.title}</h3><p>${p.desc}</p></div>`).join("");
+document.getElementById("stats").innerHTML=stats.map(s=>`<div class="stat"><div class="num">${s.num}</div><div class="label">${s.label}</div></div>`).join("");
+</script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
+</body>
+</html>

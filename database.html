@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Database - JGardenTool</title>
+<meta name="description" content="Browse and filter 30+ Japanese garden tools and bonsai supplies. Compare steel types, specs, prices, and expert notes.">
+<meta property="og:title" content="JGardenTool - Japanese Garden Tool Database">
+<meta property="og:description" content="Browse and filter 30+ Japanese garden tools and bonsai supplies by category, brand, steel type, and price.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://humancronadmin.github.io/j-garden-tool/database.html">
+<link rel="canonical" href="https://humancronadmin.github.io/j-garden-tool/database.html">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<nav class="nav">
+  <a href="index.html" class="nav-brand">JGarden<span>Tool</span></a>
+  <div class="nav-links">
+    <a href="database.html" class="active">Database</a>
+    <a href="index.html#guides">Guides</a>
+    <a href="index.html#about">About</a>
+  </div>
+</nav>
+<div class="db-header">
+  <h1>Tool Database</h1>
+  <p>Forged for the garden. Find your edge.</p>
+</div>
+<div class="filters">
+  <input type="search" id="search" placeholder="Search name or brand...">
+  <select id="category"><option value="">All Categories</option></select>
+  <select id="brand"><option value="">All Brands</option></select>
+  <select id="steel"><option value="">All Steel Types</option></select>
+  <select id="sort">
+    <option value="">Sort by...</option>
+    <option value="price-asc">Price: Low to High</option>
+    <option value="price-desc">Price: High to Low</option>
+    <option value="name-asc">Name: A to Z</option>
+  </select>
+</div>
+<div class="result-count" id="resultCount"></div>
+<div class="product-grid" id="grid"></div>
+<footer class="footer">
+  <p>JGardenTool is an open-source project. <a href="https://github.com/humancronadmin">GitHub</a></p>
+</footer>
+<script src="js/database.js"></script>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6776399834647681" crossorigin="anonymous"></script>
+</body>
+</html>
